@@ -1,3 +1,5 @@
+![Lenovo Legion 5 Pro 2021 Linux RGB Keyboard Light Controller](https://i.imgur.com/FhBMS9W.jpg)
+
 # Lenovo Legion 5 Pro 2021 Linux RGB Keyboard Light Controller
 
 This util allows to drive RGB keyboard light on Lenovo Legion 5 Pro 2021 Laptop
