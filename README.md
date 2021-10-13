@@ -173,6 +173,8 @@ Set `Super+Space` keystroke to turn light on and turn it off with single `fn+Spa
   - [ ] Music light accompaniment
 
 ## Payload description
+Device vendor = 048d, product = c965
+
 ```
 HEADER ........... cc
 HEADER ........... 16
