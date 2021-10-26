@@ -32,7 +32,7 @@ python l5p-kbl.py --help
 
 Add udev rule if you want to swith light as unprivileged user
 ```
-# /etc/udev/rules.d/10-kblight.rules
+# /etc/udev/rules.d/99-kblight.rules
 SUBSYSTEM=="usb", ATTR{idVendor}=="048d", ATTR{idProduct}=="c965", MODE="0666"
 ```
 
