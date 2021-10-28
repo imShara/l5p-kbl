@@ -14,10 +14,10 @@ This util allows to drive RGB keyboard light on Lenovo Legion 5 Pro 2021 Laptop
 ```
 git clone https://github.com/imShara/l5p-kbl
 cd l5p-kbl
-python -m venv env
+python3 -m venv env
 source ./env/bin/activate
 pip install -r requirements.txt
-python l5p-kbl.py --help
+python3 l5p-kbl.py --help
 ```
 
 ### Archlinux
