@@ -17,7 +17,7 @@ cd l5p-kbl
 python3 -m venv env
 source ./env/bin/activate
 pip install -r requirements.txt
-python3 l5p-kbl.py --help
+python3 l5p_kbl.py --help
 ```
 
 ### Archlinux
@@ -25,7 +25,7 @@ python3 l5p-kbl.py --help
 sudo pacman -Sy python-pyusb
 git clone https://github.com/imShara/l5p-kbl
 cd l5p-kbl
-python l5p-kbl.py --help
+python l5p_kbl.py --help
 ```
 
 ### Unprivileged usage
