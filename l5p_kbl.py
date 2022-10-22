@@ -6,7 +6,7 @@
 #
 # Add udev rule as "/etc/udev/rules.d/10-kblight.rules" if you want control light as user
 # SUBSYSTEM=="usb", ATTR{idVendor}=="048d", ATTR{idProduct}=="c965", MODE="0666"
-#
+# SUBSYSTEM=="usb", ATTR{idVendor}=="048d", ATTR{idProduct}=="c975", MODE="0666"
 # Payload description
 #
 # HEADER ........... cc
@@ -53,11 +53,15 @@ class LedController:
     # Keyboard light device
     # Integrated Technology Express, Inc. ITE Device(8295)
     VENDOR = 0x048D
-    PRODUCT = 0xC965
+    PRODUCT_ID_LIST = [ 0xC965 , 0xC975 ]
     EFFECT = {"static": 1, "breath": 3, "wave": 4, "hue": 6}
 
     def __init__(self):
-        device = usb.core.find(idVendor=self.VENDOR, idProduct=self.PRODUCT)
+        
+        for product in self.PRODUCT_ID_LIST:
+            device = usb.core.find(idVendor=self.VENDOR, idProduct=product)
+            if device is not None:
+                break;
 
         if device is None:
             raise ValueError("Light device not found")
